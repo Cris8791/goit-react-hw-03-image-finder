@@ -1,7 +1,13 @@
+import styles from './ImageGalleryItem.module.css';
+
 const ImageGalleryItem = ({ image, onClick }) => {
   return (
-    <li className="gallery-item" onClick={() => onClick(image)}>
-      <img src={image.webformatURL} alt="" />
+    <li className={styles.GalleryItem} onClick={() => onClick(image)}>
+      <img
+        className={styles.ImageGalleryItem}
+        src={image.webformatURL}
+        alt=""
+      />
     </li>
   );
 };

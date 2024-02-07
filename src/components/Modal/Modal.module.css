@@ -8,21 +8,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1050; /* Asigură-te că este suficient de mare */
+  z-index: 1200;
 }
 
 .modal {
-  width: 50%;
-  max-width: 640px; /* Ajustează după nevoie */
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 24px);
   background-color: #fff;
-  padding: 20px;
+
+  margin: 0px;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1060; /* Asigură-te că este mai mare decât overlay */
+  z-index: 1060;
 }
 
-/* Opțional: Stil pentru imaginea din modal */
 .modal img {
-  max-width: 100%; /* Asigură-te că imaginea se încadrează în modal */
+  max-width: 100%;
   height: auto;
+  border-radius: 4px;
 }
